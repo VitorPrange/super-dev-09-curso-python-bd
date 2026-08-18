@@ -3,6 +3,7 @@ from pratos_feitos import menu_pratos_feitos
 from clientes import menu_clientes
 from bebidas import menu_bebidas
 from mesas import menu_mesas
+from comandas import menu_comanda
 import os
 
 
@@ -14,6 +15,7 @@ def __main():
 3 - Clientes
 4 - Bebidas
 5 - Mesas
+6 - Comandas
 10 - Sair
 
 Digite a opção desejada: """
@@ -34,6 +36,8 @@ Digite a opção desejada: """
             menu_bebidas()
         elif opcao == 5:
             menu_mesas()
+        elif opcao == 6:
+            menu_comanda()
         elif opcao != 10:
 
             print("Opção invalida")
